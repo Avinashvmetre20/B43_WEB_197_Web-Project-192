@@ -1,0 +1,9 @@
+{
+    "jwtSecret": "avinashvmetre20",
+    "alphaVantageApiKey": "Y4Q2AWZY2I35RASD",
+    "finnhubApiKey": "cvf68jpr01qjugsgarq0cvf68jpr01qjugsgarer",
+    "coingeckoApiUrl": "https://api.coingecko.com/api/v3",
+    "newsApiKey": "ea158755e5fb4f22a1548ae9b1cfe701",
+    "broadcastInterval": 30000
+  }
+  

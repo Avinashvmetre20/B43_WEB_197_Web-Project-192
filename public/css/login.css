@@ -1,0 +1,139 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body styling */
+body {
+    background: linear-gradient(135deg, #6c5ce7, #74b9ff);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #2d3436;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Keyframe animation for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Form container styling */
+form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+    position: relative;
+    animation: slideIn 0.8s ease-in-out;
+}
+
+/* Keyframe animation for slide-in effect */
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Heading styling */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2d3436;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: -20px; /* Pull the heading upwards */
+}
+
+/* Input field styling */
+label {
+    font-size: 18px;
+    margin: 8px 0 4px;
+    display: block;
+    color: #2d3436;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 6px 0 16px;
+    border: 2px solid #b2bec3;
+    border-radius: 8px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #0984e3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 12px;
+    background-color: #0984e3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #74b9ff;
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+/* Hover effect on input fields */
+input[type="email"]:hover,
+input[type="password"]:hover {
+    border-color: #74b9ff;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    form {
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 12px;
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Real-Time Data</title>
+    <link rel="stylesheet" href="./css/realtime.css">
+</head>
+<body>
+    <h2>Real-Time Data</h2>
+
+    <div class="container">
+        <!-- Market News Section -->
+        <div class="market-news">
+            <h3>Market News</h3>
+            <button id="fetchMarketNewsButton">Fetch Market News</button>
+            <div id="marketNews">
+                <p>Click the button above to load the latest market news.</p>
+            </div>
+        </div>
+
+        <!-- Data Sections -->
+        <div class="data-sections">
+            <!-- Stock Data Section -->
+            <div class="stock-data">
+                <h3>Real-Time Stock Data</h3>
+                <label for="stockSymbol">Select Stock Symbol:</label>
+                <input type="text" id="symbolSearch" placeholder="Search symbol...">
+                <select id="stockSymbol"></select>
+                <button id="fetchStockDataButton">Fetch Stock Data</button>
+                <div id="stockData"></div>
+            </div>
+
+            <!-- Crypto Data Section -->
+            <div class="crypto-data">
+                <h3>Real-Time Crypto Data</h3>
+                <label for="cryptoSymbol">Select Crypto Symbol:</label>
+                <input type="text" id="cryptoSearch" placeholder="Search crypto...">
+                <select id="cryptoSymbol"></select>
+
+                <label for="currency">Select Currency:</label>
+                <input type="text" id="currencySearch" placeholder="Search currency...">
+                <select id="currency"></select>
+                <button id="fetchCryptoDataButton">Fetch Crypto Data</button>
+                <div id="cryptoData"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/realtime.js"></script>
+</body>
+</html>

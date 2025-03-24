@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./css/profile.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Welcome to Your Profile</h2>
+        <div class="profile-card">
+            <p><strong>User ID:</strong> <span id="userId"></span></p>
+            <p><strong>Username:</strong> <span id="username"></span></p>
+            <p><strong>Email:</strong> <span id="email"></span></p>
+            <p><strong>Created At:</strong> <span id="createdAt"></span></p>
+            <p><strong>Updated At:</strong> <span id="updatedAt"></span></p>
+        </div>
+        <h3>Real-Time Data</h3>
+        <button id="realTimeDataButton">View Real-Time Data</button>
+
+        <!-- Moved logout button here -->
+        <button id="logoutButton">Logout</button>
+    </div>
+
+    <div class="main-content">
+        <h3>Manage Your Assets</h3>
+        <button id="getDataButton">Give My Data</button>
+        <div id="assets" style="display: none;"></div>
+
+        <h3>Add New Asset</h3>
+        <button id="toggleAddForm">Add Data</button>
+        <form id="addAssetForm" style="display: none;">
+            <label>Type:</label>
+            <select id="type" required>
+                <option value="stock">Stock</option>
+                <option value="crypto">Crypto</option>
+                <option value="bond">Bond</option>
+                <option value="real estate">Real Estate</option>
+                <option value="commodity">Commodity</option>
+                <option value="cash">Cash</option>
+            </select>
+            <label>Symbol:</label>
+            <input type="text" id="symbol" required>
+            <label>Name:</label>
+            <input type="text" id="name" required>
+            <label>Quantity:</label>
+            <input type="number" id="quantity" required>
+            <label>Purchase Price:</label>
+            <input type="number" id="purchasePrice" required>
+            <label>Purchase Date:</label>
+            <input type="date" id="purchaseDate">
+            <button type="submit">Add Asset</button>
+        </form>
+    </div>
+
+    <script src="./js/profile.js"></script>
+</body>
+</html>
